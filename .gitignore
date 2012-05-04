@@ -1,3 +1,12 @@
+# General
+.DS_Store
+*.swp
+*-.nib
+
+# backup
+*~
+*.bak
+
 # Xcode
 build/*
 *.pbxuser
