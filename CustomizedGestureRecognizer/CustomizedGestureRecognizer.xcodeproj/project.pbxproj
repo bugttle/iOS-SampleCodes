@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0832FD1556747F002851EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0832FC1556747F002851EA /* UIKit.framework */; };
+		CE0832FF1556747F002851EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0832FE1556747F002851EA /* Foundation.framework */; };
+		CE0833011556747F002851EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0833001556747F002851EA /* CoreGraphics.framework */; };
+		CE0833071556747F002851EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0833051556747F002851EA /* InfoPlist.strings */; };
+		CE0833091556747F002851EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0833081556747F002851EA /* main.m */; };
+		CE08330D1556747F002851EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08330C1556747F002851EA /* AppDelegate.m */; };
+		CE0833101556747F002851EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08330F1556747F002851EA /* ViewController.m */; };
+		CE0833131556747F002851EA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0833111556747F002851EA /* ViewController_iPhone.xib */; };
+		CE0833161556747F002851EA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0833141556747F002851EA /* ViewController_iPad.xib */; };
+		CE08331E155674D2002851EA /* StrokeGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08331D155674D2002851EA /* StrokeGestureRecognizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0832F81556747F002851EA /* CustomizedGestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizedGestureRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0832FC1556747F002851EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE0832FE1556747F002851EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE0833001556747F002851EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE0833041556747F002851EA /* CustomizedGestureRecognizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomizedGestureRecognizer-Info.plist"; sourceTree = "<group>"; };
+		CE0833061556747F002851EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE0833081556747F002851EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE08330A1556747F002851EA /* CustomizedGestureRecognizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomizedGestureRecognizer-Prefix.pch"; sourceTree = "<group>"; };
+		CE08330B1556747F002851EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE08330C1556747F002851EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE08330E1556747F002851EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE08330F1556747F002851EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE0833121556747F002851EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CE0833151556747F002851EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CE08331C155674D2002851EA /* StrokeGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrokeGestureRecognizer.h; sourceTree = "<group>"; };
+		CE08331D155674D2002851EA /* StrokeGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrokeGestureRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0832F51556747F002851EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0832FD1556747F002851EA /* UIKit.framework in Frameworks */,
+				CE0832FF1556747F002851EA /* Foundation.framework in Frameworks */,
+				CE0833011556747F002851EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0832ED1556747F002851EA = {
+			isa = PBXGroup;
+			children = (
+				CE0833021556747F002851EA /* CustomizedGestureRecognizer */,
+				CE0832FB1556747F002851EA /* Frameworks */,
+				CE0832F91556747F002851EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0832F91556747F002851EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0832F81556747F002851EA /* CustomizedGestureRecognizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0832FB1556747F002851EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0832FC1556747F002851EA /* UIKit.framework */,
+				CE0832FE1556747F002851EA /* Foundation.framework */,
+				CE0833001556747F002851EA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0833021556747F002851EA /* CustomizedGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				CE08331C155674D2002851EA /* StrokeGestureRecognizer.h */,
+				CE08331D155674D2002851EA /* StrokeGestureRecognizer.m */,
+				CE08330B1556747F002851EA /* AppDelegate.h */,
+				CE08330C1556747F002851EA /* AppDelegate.m */,
+				CE08330E1556747F002851EA /* ViewController.h */,
+				CE08330F1556747F002851EA /* ViewController.m */,
+				CE0833111556747F002851EA /* ViewController_iPhone.xib */,
+				CE0833141556747F002851EA /* ViewController_iPad.xib */,
+				CE0833031556747F002851EA /* Supporting Files */,
+			);
+			path = CustomizedGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		CE0833031556747F002851EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0833041556747F002851EA /* CustomizedGestureRecognizer-Info.plist */,
+				CE0833051556747F002851EA /* InfoPlist.strings */,
+				CE0833081556747F002851EA /* main.m */,
+				CE08330A1556747F002851EA /* CustomizedGestureRecognizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0832F71556747F002851EA /* CustomizedGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0833191556747F002851EA /* Build configuration list for PBXNativeTarget "CustomizedGestureRecognizer" */;
+			buildPhases = (
+				CE0832F41556747F002851EA /* Sources */,
+				CE0832F51556747F002851EA /* Frameworks */,
+				CE0832F61556747F002851EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomizedGestureRecognizer;
+			productName = CustomizedGestureRecognizer;
+			productReference = CE0832F81556747F002851EA /* CustomizedGestureRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0832EF1556747F002851EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Individual;
+			};
+			buildConfigurationList = CE0832F21556747F002851EA /* Build configuration list for PBXProject "CustomizedGestureRecognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE0832ED1556747F002851EA;
+			productRefGroup = CE0832F91556747F002851EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0832F71556747F002851EA /* CustomizedGestureRecognizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0832F61556747F002851EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0833071556747F002851EA /* InfoPlist.strings in Resources */,
+				CE0833131556747F002851EA /* ViewController_iPhone.xib in Resources */,
+				CE0833161556747F002851EA /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0832F41556747F002851EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0833091556747F002851EA /* main.m in Sources */,
+				CE08330D1556747F002851EA /* AppDelegate.m in Sources */,
+				CE0833101556747F002851EA /* ViewController.m in Sources */,
+				CE08331E155674D2002851EA /* StrokeGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE0833051556747F002851EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0833061556747F002851EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE0833111556747F002851EA /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0833121556747F002851EA /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CE0833141556747F002851EA /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0833151556747F002851EA /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0833171556747F002851EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE0833181556747F002851EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE08331A1556747F002851EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomizedGestureRecognizer/CustomizedGestureRecognizer-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CustomizedGestureRecognizer/CustomizedGestureRecognizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE08331B1556747F002851EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomizedGestureRecognizer/CustomizedGestureRecognizer-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CustomizedGestureRecognizer/CustomizedGestureRecognizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0832F21556747F002851EA /* Build configuration list for PBXProject "CustomizedGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0833171556747F002851EA /* Debug */,
+				CE0833181556747F002851EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0833191556747F002851EA /* Build configuration list for PBXNativeTarget "CustomizedGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE08331A1556747F002851EA /* Debug */,
+				CE08331B1556747F002851EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0832EF1556747F002851EA /* Project object */;
+}
