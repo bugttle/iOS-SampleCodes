@@ -14,34 +14,29 @@
 
 @implementation ViewController
 
-@synthesize allGesturesView;
-@synthesize panGestureView;
-@synthesize swipeGestureView;
-@synthesize showGestureName;
-@synthesize showSubInformation;
-
-- (void)loadView {
-    [super loadView];
-    
-    // 全てのジェスチャを設定
-    [self addTagGestureRecognizer:allGesturesView];
-    [self addPinchGestureRecognizer:allGesturesView];
-    [self addPanGestureRecognizer:allGesturesView];
-    [self addSwipeGestureRecognizer:allGesturesView];
-    [self addRotationGestureRecognizer:allGesturesView];
-    [self addLongPressGestureRecognizer:allGesturesView];
-    
-    // スワイプと同じ動作なので、ドラッグジェスチャのみを設定
-    [self addPanGestureRecognizer:panGestureView];
-    
-    // ドラッグと同じ動作なので、スワイプジェスチャのみを設定
-    [self addSwipeGestureRecognizer:swipeGestureView];
-}
+@synthesize allGesturesView = _allGesturesView;
+@synthesize panGestureView = _panGestureView;
+@synthesize swipeGestureView = _swipeGestureView;
+@synthesize gestureNameLabel = _gestureNameLabel;
+@synthesize subInformationLabel = _subInformationLabel;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // 全てのジェスチャを設定
+    [self addTagGestureRecognizer:_allGesturesView];
+    [self addPinchGestureRecognizer:_allGesturesView];
+    [self addPanGestureRecognizer:_allGesturesView];
+    [self addSwipeGestureRecognizer:_allGesturesView];
+    [self addRotationGestureRecognizer:_allGesturesView];
+    [self addLongPressGestureRecognizer:_allGesturesView];
+    
+    // スワイプと同じ動作なので、ドラッグジェスチャのみを設定
+    [self addPanGestureRecognizer:_panGestureView];
+    
+    // ドラッグと同じ動作なので、スワイプジェスチャのみを設定
+    [self addSwipeGestureRecognizer:_swipeGestureView];
 }
 
 - (void)viewDidUnload
@@ -51,16 +46,17 @@
     self.allGesturesView = nil;
     self.panGestureView = nil;
     self.swipeGestureView = nil;
-    self.showGestureName = nil;
-    self.showSubInformation = nil;
+    self.gestureNameLabel = nil;
+    self.subInformationLabel = nil;
 }
 
-- (void)dealloc {
-    [allGesturesView release];
-    [panGestureView release];
-    [swipeGestureView release];
-    [showGestureName release];
-    [showSubInformation release];
+- (void)dealloc
+{
+    [_allGesturesView release];
+    [_panGestureView release];
+    [_swipeGestureView release];
+    [_gestureNameLabel release];
+    [_subInformationLabel release];
     
     [super dealloc];
 }
@@ -71,7 +67,7 @@
 }
 
 #pragma mark -
-#pragma mark add gestrue recognizer
+#pragma mark addGestrueRecognizers
 
 - (void)addTagGestureRecognizer:(UIView *)view
 {
@@ -165,95 +161,95 @@
 }
 
 #pragma mark -
-#pragma mark touch handler
+#pragma mark GestureRecognizer handlers
 
 // 一本指でシングルタップ
 - (void)handleSingleFingerSingleTap:(UITapGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UITapGestureRecognizer"];
-    [showSubInformation setText:@"[Single finger, Single tap]"];
+    [self.gestureNameLabel setText:@"UITapGestureRecognizer"];
+    [self.subInformationLabel setText:@"[Single finger, Single tap]"];
 }
 
 // 一本指でダブルタップ
 - (void)handleSingleFingerDoubleTap:(UITapGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UITapGestureRecognizer"];
-    [showSubInformation setText:@"[Single finger, Double tap]"];
+    [self.gestureNameLabel setText:@"UITapGestureRecognizer"];
+    [self.subInformationLabel setText:@"[Single finger, Double tap]"];
 }
 
 // 二本指でシングルタップ
 - (void)handleTwoFingerSingleTap:(UITapGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UITapGestureRecognizer"];
-    [showSubInformation setText:@"[Two finger, Single tap]"];
+    [self.gestureNameLabel setText:@"UITapGestureRecognizer"];
+    [self.subInformationLabel setText:@"[Two finger, Single tap]"];
 }
 
 // 二本指でダブルタップ
 - (void)handleTwoFingerDoubleTap:(UITapGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UITapGestureRecognizer"];
-    [showSubInformation setText:@"[Two finger, Double tap]"];
+    [self.gestureNameLabel setText:@"UITapGestureRecognizer"];
+    [self.subInformationLabel setText:@"[Two finger, Double tap]"];
 }
 
 // ピンチイン・ピンチアウト
 - (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UIPinchGestureRecognizer"];
-    [showSubInformation setText:[NSString stringWithFormat:@"[scale:%f, velocity:%f]", recognizer.scale, recognizer.velocity]];
+    [self.gestureNameLabel setText:@"UIPinchGestureRecognizer"];
+    [self.subInformationLabel setText:[NSString stringWithFormat:@"[scale:%f, velocity:%f]", recognizer.scale, recognizer.velocity]];
 }
 
 // ドラッグ
 - (void)handlePanGesture:(UIPanGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UIPanGestureRecognizer"];
+    [self.gestureNameLabel setText:@"UIPanGestureRecognizer"];
     UIView *targetView = [recognizer view];
     CGPoint translationPoint = [recognizer translationInView:targetView];
     CGPoint velocityPoint = [recognizer velocityInView:targetView];
-    [showSubInformation setText:[NSString stringWithFormat:@"[translation:(%f,%f), velocity:(%f,%f)]", translationPoint.x, translationPoint.y, velocityPoint.x, velocityPoint.y]];
+    [self.subInformationLabel setText:[NSString stringWithFormat:@"[translation:(%f,%f), velocity:(%f,%f)]", translationPoint.x, translationPoint.y, velocityPoint.x, velocityPoint.y]];
 }
 
 // スワイプ
 - (void)handleSwipeGesture:(UISwipeGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UISwipeGestureRecognizer"];
-    NSString *directionName = nil;
+    [self.gestureNameLabel setText:@"UISwipeGestureRecognizer"];
+    NSString *directionString = nil;
     switch ([recognizer direction]) {
         case UISwipeGestureRecognizerDirectionRight:
-            directionName = @"UISwipeGestureRecognizerDirectionRight";
+            directionString = @"UISwipeGestureRecognizerDirectionRight";
             break;
         case UISwipeGestureRecognizerDirectionLeft:
-            directionName = @"UISwipeGestureRecognizerDirectionLeft";
+            directionString = @"UISwipeGestureRecognizerDirectionLeft";
             break;
         case UISwipeGestureRecognizerDirectionUp:
-            directionName = @"UISwipeGestureRecognizerDirectionUp";        
+            directionString = @"UISwipeGestureRecognizerDirectionUp";        
             break;
         case UISwipeGestureRecognizerDirectionDown:
-            directionName = @"UISwipeGestureRecognizerDirectionDown";
+            directionString = @"UISwipeGestureRecognizerDirectionDown";
             break;
     }
-    [showSubInformation setText:[NSString stringWithFormat:@"[%@]", directionName]];
+    [self.subInformationLabel setText:[NSString stringWithFormat:@"[%@]", directionString]];
 }
 
 // 回転
 - (void)handleRotationGesture:(UIRotationGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UIRotationGestureRecognizer"];
-    [showSubInformation setText:[NSString stringWithFormat:@"[rotation:%f, velocity:%f]", recognizer.rotation, recognizer.velocity]];
+    [self.gestureNameLabel setText:@"UIRotationGestureRecognizer"];
+    [self.subInformationLabel setText:[NSString stringWithFormat:@"[rotation:%f, velocity:%f]", recognizer.rotation, recognizer.velocity]];
 }
 
 // 長押し
 - (void)handleLongPressGesture:(UILongPressGestureRecognizer *)recognizer {
-    [showGestureName setText:@"UILongPressGestureRecognizer"];
-    NSString *actionName = nil;
+    [self.gestureNameLabel setText:@"UILongPressGestureRecognizer"];
+    NSString *stateString = nil;
     switch ([recognizer state]) {
         case UIGestureRecognizerStateBegan:
-            actionName = @"UIGestureRecognizerStateBegan";
+            stateString = @"UIGestureRecognizerStateBegan";
             break;
         case UIGestureRecognizerStateChanged:
-            actionName = @"UIGestureRecognizerStateChanged";
+            stateString = @"UIGestureRecognizerStateChanged";
             break;
         case UIGestureRecognizerStateEnded:
-            actionName = @"UIGestureRecognizerStateEnd";
+            stateString = @"UIGestureRecognizerStateEnd";
             break;
         case UIGestureRecognizerStateCancelled:
-            actionName = @"UIGestureRecognizerStateCancelled";
+            stateString = @"UIGestureRecognizerStateCancelled";
             break;
         default:
             break;
     }
-    [showSubInformation setText:[NSString stringWithFormat:@"[%@]", actionName]];
+    [self.subInformationLabel setText:[NSString stringWithFormat:@"[%@]", stateString]];
 }
 
 @end

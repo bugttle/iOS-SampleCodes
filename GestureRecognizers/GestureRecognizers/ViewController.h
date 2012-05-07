@@ -9,18 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-{
-    UIView *allGesturesView; // 全てのジェスチャーを設定する
-    UIView *panGestureView; // ドラッグジェスチャのみを設定する
-    UIView *swipeGestureView; // スワイプジェスチャのみを設定する
-    UILabel *showGestureName; // どのようなジェスチャを検知したかを出力する
-    UILabel *showSubInfomation; // それに付随する情報を出力する
-}
 
-@property (nonatomic, retain) IBOutlet UIView *allGesturesView;
-@property (nonatomic, retain) IBOutlet UIView *panGestureView;
-@property (nonatomic, retain) IBOutlet UIView *swipeGestureView;
-@property (nonatomic, retain) IBOutlet UILabel *showGestureName;
-@property (nonatomic, retain) IBOutlet UILabel *showSubInformation;
+@property (nonatomic, retain) IBOutlet UIView *allGesturesView;  // 全てのジェスチャーを設定する
+@property (nonatomic, retain) IBOutlet UIView *panGestureView;  // ドラッグジェスチャのみを設定する
+@property (nonatomic, retain) IBOutlet UIView *swipeGestureView;  // スワイプジェスチャのみを設定する
+@property (nonatomic, retain) IBOutlet UILabel *gestureNameLabel;  // 検出したジェスチャを出力する
+@property (nonatomic, retain) IBOutlet UILabel *subInformationLabel;  // それに付随する情報を出力する
 
 @end
