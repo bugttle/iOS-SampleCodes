@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     // 全てのジェスチャを設定
-    [self addTagGestureRecognizer:_allGesturesView];
+    [self addTapGestureRecognizer:_allGesturesView];
     [self addPinchGestureRecognizer:_allGesturesView];
     [self addPanGestureRecognizer:_allGesturesView];
     [self addSwipeGestureRecognizer:_allGesturesView];
@@ -69,7 +69,7 @@
 #pragma mark -
 #pragma mark addGestrueRecognizers
 
-- (void)addTagGestureRecognizer:(UIView *)view
+- (void)addTapGestureRecognizer:(UIView *)view
 {
     /* 1本指 */
     // 1本指でシングルタップ
