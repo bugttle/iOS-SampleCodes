@@ -153,20 +153,16 @@ typedef enum {
             _strokeCount++;  // ストロークの回数を増やす
             if ([self.wantedGesture count] < _strokeCount) {
                 // 必要とするジェスチャーを通り過ぎた
-                //   iOS4では"Began"に設定するとずっと"Began"だが、iOS5だと1度だけ"Began"で後は自動的に"Changed"になってしまう
-                //   そのため、「Possible -> Faild / Began -> Canceled」とする
-                if (self.state == UIGestureRecognizerStatePossible) {
-                    self.state = UIGestureRecognizerStateFailed;
-                } else {
-                    self.state = UIGestureRecognizerStateCancelled;
-                }
+                // ここが実行される時には
+                //     iOS4: Began, iOS5: Began/Changed
+                // なので、Canclledにする
+                self.state = UIGestureRecognizerStateCancelled;
                 return;
             }
             LocalStrokeDirection wantedDirection = [[self.wantedGesture objectAtIndex:_strokeCount - 1] intValue];
             if (wantedDirection != currentDirection) {
                 // 必要とするジェスチャーではない
-                //   iOS4では"Began"に設定するとずっと"Began"だが、iOS5だと1度だけ"Began"で後は自動的に"Changed"になってしまう
-                //   そのため、「Possible -> Faild / Began -> Canceled」とする
+                // 「Possible ならば Faild」「Began/Changed ならば Canceled」とする
                 if (self.state == UIGestureRecognizerStatePossible) {
                     self.state = UIGestureRecognizerStateFailed;
                 } else {
@@ -176,9 +172,10 @@ typedef enum {
             }
             if ([self.wantedGesture count] == _strokeCount) {
                 // 必要とするジェスチャーと一致
-                //   iOS4では"Began"に設定するとずっと"Began"だが、iOS5だと1度だけ"Began"で後は自動的に"Changed"になってしまう
-                //     iOS4:「Possible -> Began」
-                //     iOS5:「Possible -> Began -> Changed」
+                //   iOS4では"Began"に設定すると"Changed"に設定しない限りずっと"Began"だが、
+                //   iOS5では1度だけBeganで自動的に"Changed"になってしまう
+                //     iOS4: Possible -> Began -> Ended
+                //     iOS5: Possible -> Began -> Changed -> Ended
                 self.state = UIGestureRecognizerStateBegan;
                 return;
             }
