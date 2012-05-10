@@ -121,6 +121,12 @@ typedef enum {
 {
     [super touchesMoved:touches withEvent:event];
     
+    /* これを書いておくと、iOS4とiOS5で同じ挙動になる */
+    //if (self.state == UIGestureRecognizerStateBegan) {
+    //
+    //    self.state = UIGestureRecognizerStateChanged;
+    //}
+    
     CGPoint nowPoint = [[touches anyObject] locationInView:self.view];
     CGPoint prevPoint = [[touches anyObject] previousLocationInView:self.view];
     LocalStrokeDirection currentDirection;  // 前回と今回とを比較しどの方向に移動したか
@@ -155,7 +161,7 @@ typedef enum {
                 // 必要とするジェスチャーを通り過ぎた
                 // ここが実行される時には
                 //     iOS4: Began, iOS5: Began/Changed
-                // なので、Canclledにする
+                // なので、Cancelledにする
                 self.state = UIGestureRecognizerStateCancelled;
                 return;
             }
@@ -173,7 +179,7 @@ typedef enum {
             if ([self.wantedGesture count] == _strokeCount) {
                 // 必要とするジェスチャーと一致
                 //   iOS4では"Began"に設定すると"Changed"に設定しない限りずっと"Began"だが、
-                //   iOS5では1度だけBeganで自動的に"Changed"になってしまう
+                //   iOS5では1度だけBeganで、以降は自動的に"Changed"になってしまう
                 //     iOS4: Possible -> Began -> Ended
                 //     iOS5: Possible -> Began -> Changed -> Ended
                 self.state = UIGestureRecognizerStateBegan;
@@ -194,13 +200,13 @@ typedef enum {
         case UIGestureRecognizerStateFailed:  // ジェスチャーと認識されなかった
             self.state = UIGestureRecognizerStateFailed;
             break;
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // ジェスチャーが正しく認識された状態で指を話した
             self.state = UIGestureRecognizerStateEnded;
             break;
         default:
-            // ジェスチャーの認識中に指が離された
+            // ジェスチャーの認識途中で指が離された
             self.state = UIGestureRecognizerStateCancelled;
             break;
     }

@@ -70,7 +70,6 @@
     [cShapedGesture addWantedStroke:StrokeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:cShapedGesture];
     [cShapedGesture release];
-
 }
 
 - (void)viewDidUnload
@@ -165,8 +164,8 @@
 - (void)handleIShapedGesture:(StrokeGestureRecognizer *)recognizer
 {
     switch ([recognizer state]) {
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // まだ途中だが、正しいジェスチャーであると認識している
             [self.currentGestureName setText:@"I-shaped gesture"];
             break;
@@ -188,8 +187,8 @@
 - (void)handleLShapedGesture:(StrokeGestureRecognizer *)recognizer
 {
     switch ([recognizer state]) {
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // まだ途中だが、正しいジェスチャーであると認識している
             [self.currentGestureName setText:@"L-shaped gesture"];
             break;
@@ -211,8 +210,8 @@
 - (void)handleUShapedGesture:(StrokeGestureRecognizer *)recognizer
 {
     switch ([recognizer state]) {
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // まだ途中だが、正しいジェスチャーであると認識している
             [self.currentGestureName setText:@"U-shaped gesture"];
             break;
@@ -235,8 +234,8 @@
 - (void)handleOShapedGesture:(StrokeGestureRecognizer *)recognizer
 {
     switch ([recognizer state]) {
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // まだ途中だが、正しいジェスチャーであると認識している
             [self.currentGestureName setText:@"O-shaped gesture"];
             break;
@@ -258,8 +257,8 @@
 - (void)handleCShapedGesture:(StrokeGestureRecognizer *)recognizer
 {
     switch ([recognizer state]) {
-        case UIGestureRecognizerStateBegan:  // iOS4
-        case UIGestureRecognizerStateChanged:  // iOS5
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
             // まだ途中だが、正しいジェスチャーであると認識している
             [self.currentGestureName setText:@"C-shaped gesture"];
             break;
