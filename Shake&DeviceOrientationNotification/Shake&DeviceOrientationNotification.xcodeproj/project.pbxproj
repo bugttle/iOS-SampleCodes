@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE8019E0155E3C3E001D8B48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8019DF155E3C3E001D8B48 /* UIKit.framework */; };
+		CE8019E2155E3C3E001D8B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8019E1155E3C3E001D8B48 /* Foundation.framework */; };
+		CE8019E4155E3C3E001D8B48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8019E3155E3C3E001D8B48 /* CoreGraphics.framework */; };
+		CE8019EA155E3C3E001D8B48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE8019E8155E3C3E001D8B48 /* InfoPlist.strings */; };
+		CE8019EC155E3C3E001D8B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8019EB155E3C3E001D8B48 /* main.m */; };
+		CE8019F0155E3C3E001D8B48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8019EF155E3C3E001D8B48 /* AppDelegate.m */; };
+		CE8019F3155E3C3E001D8B48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8019F2155E3C3E001D8B48 /* ViewController.m */; };
+		CE8019F6155E3C3E001D8B48 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8019F4155E3C3E001D8B48 /* ViewController_iPhone.xib */; };
+		CE8019F9155E3C3E001D8B48 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8019F7155E3C3E001D8B48 /* ViewController_iPad.xib */; };
+		CE801A00155E3CA7001D8B48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8019FF155E3CA7001D8B48 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE8019DB155E3C3E001D8B48 /* Shake&DeviceOrientationNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shake&DeviceOrientationNotification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8019DF155E3C3E001D8B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE8019E1155E3C3E001D8B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE8019E3155E3C3E001D8B48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE8019E7155E3C3E001D8B48 /* Shake&DeviceOrientationNotification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shake&DeviceOrientationNotification-Info.plist"; sourceTree = "<group>"; };
+		CE8019E9155E3C3E001D8B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE8019EB155E3C3E001D8B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE8019ED155E3C3E001D8B48 /* Shake&DeviceOrientationNotification-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shake&DeviceOrientationNotification-Prefix.pch"; sourceTree = "<group>"; };
+		CE8019EE155E3C3E001D8B48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE8019EF155E3C3E001D8B48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE8019F1155E3C3E001D8B48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE8019F2155E3C3E001D8B48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE8019F5155E3C3E001D8B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CE8019F8155E3C3E001D8B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CE8019FF155E3CA7001D8B48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8019D8155E3C3E001D8B48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE801A00155E3CA7001D8B48 /* AudioToolbox.framework in Frameworks */,
+				CE8019E0155E3C3E001D8B48 /* UIKit.framework in Frameworks */,
+				CE8019E2155E3C3E001D8B48 /* Foundation.framework in Frameworks */,
+				CE8019E4155E3C3E001D8B48 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE8019D0155E3C3E001D8B48 = {
+			isa = PBXGroup;
+			children = (
+				CE8019E5155E3C3E001D8B48 /* Shake&DeviceOrientationNotification */,
+				CE8019DE155E3C3E001D8B48 /* Frameworks */,
+				CE8019DC155E3C3E001D8B48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8019DC155E3C3E001D8B48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8019DB155E3C3E001D8B48 /* Shake&DeviceOrientationNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8019DE155E3C3E001D8B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8019FF155E3CA7001D8B48 /* AudioToolbox.framework */,
+				CE8019DF155E3C3E001D8B48 /* UIKit.framework */,
+				CE8019E1155E3C3E001D8B48 /* Foundation.framework */,
+				CE8019E3155E3C3E001D8B48 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8019E5155E3C3E001D8B48 /* Shake&DeviceOrientationNotification */ = {
+			isa = PBXGroup;
+			children = (
+				CE8019EE155E3C3E001D8B48 /* AppDelegate.h */,
+				CE8019EF155E3C3E001D8B48 /* AppDelegate.m */,
+				CE8019F1155E3C3E001D8B48 /* ViewController.h */,
+				CE8019F2155E3C3E001D8B48 /* ViewController.m */,
+				CE8019F4155E3C3E001D8B48 /* ViewController_iPhone.xib */,
+				CE8019F7155E3C3E001D8B48 /* ViewController_iPad.xib */,
+				CE8019E6155E3C3E001D8B48 /* Supporting Files */,
+			);
+			path = "Shake&DeviceOrientationNotification";
+			sourceTree = "<group>";
+		};
+		CE8019E6155E3C3E001D8B48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE8019E7155E3C3E001D8B48 /* Shake&DeviceOrientationNotification-Info.plist */,
+				CE8019E8155E3C3E001D8B48 /* InfoPlist.strings */,
+				CE8019EB155E3C3E001D8B48 /* main.m */,
+				CE8019ED155E3C3E001D8B48 /* Shake&DeviceOrientationNotification-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8019DA155E3C3E001D8B48 /* Shake&DeviceOrientationNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8019FC155E3C3E001D8B48 /* Build configuration list for PBXNativeTarget "Shake&DeviceOrientationNotification" */;
+			buildPhases = (
+				CE8019D7155E3C3E001D8B48 /* Sources */,
+				CE8019D8155E3C3E001D8B48 /* Frameworks */,
+				CE8019D9155E3C3E001D8B48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shake&DeviceOrientationNotification";
+			productName = "Shake&DeviceOrientationNotification";
+			productReference = CE8019DB155E3C3E001D8B48 /* Shake&DeviceOrientationNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8019D2155E3C3E001D8B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Individual;
+			};
+			buildConfigurationList = CE8019D5155E3C3E001D8B48 /* Build configuration list for PBXProject "Shake&DeviceOrientationNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE8019D0155E3C3E001D8B48;
+			productRefGroup = CE8019DC155E3C3E001D8B48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8019DA155E3C3E001D8B48 /* Shake&DeviceOrientationNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8019D9155E3C3E001D8B48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8019EA155E3C3E001D8B48 /* InfoPlist.strings in Resources */,
+				CE8019F6155E3C3E001D8B48 /* ViewController_iPhone.xib in Resources */,
+				CE8019F9155E3C3E001D8B48 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8019D7155E3C3E001D8B48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8019EC155E3C3E001D8B48 /* main.m in Sources */,
+				CE8019F0155E3C3E001D8B48 /* AppDelegate.m in Sources */,
+				CE8019F3155E3C3E001D8B48 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE8019E8155E3C3E001D8B48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8019E9155E3C3E001D8B48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE8019F4155E3C3E001D8B48 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8019F5155E3C3E001D8B48 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CE8019F7155E3C3E001D8B48 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8019F8155E3C3E001D8B48 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8019FA155E3C3E001D8B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8019FB155E3C3E001D8B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE8019FD155E3C3E001D8B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shake&DeviceOrientationNotification/Shake&DeviceOrientationNotification-Prefix.pch";
+				INFOPLIST_FILE = "Shake&DeviceOrientationNotification/Shake&DeviceOrientationNotification-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE8019FE155E3C3E001D8B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shake&DeviceOrientationNotification/Shake&DeviceOrientationNotification-Prefix.pch";
+				INFOPLIST_FILE = "Shake&DeviceOrientationNotification/Shake&DeviceOrientationNotification-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE8019D5155E3C3E001D8B48 /* Build configuration list for PBXProject "Shake&DeviceOrientationNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8019FA155E3C3E001D8B48 /* Debug */,
+				CE8019FB155E3C3E001D8B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8019FC155E3C3E001D8B48 /* Build configuration list for PBXNativeTarget "Shake&DeviceOrientationNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8019FD155E3C3E001D8B48 /* Debug */,
+				CE8019FE155E3C3E001D8B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE8019D2155E3C3E001D8B48 /* Project object */;
+}
