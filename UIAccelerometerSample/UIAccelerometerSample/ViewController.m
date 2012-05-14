@@ -82,8 +82,8 @@
     
     /* High-pass filter */
     _highpass.x = acceleration.x - ((acceleration.x * filteringFactor) + (_highpass.x * (1.0 - filteringFactor)));
-    _highpass.y = acceleration.y - ((acceleration.y * filteringFactor) + _highpass.y * (1.0 - filteringFactor));
-    _highpass.z = acceleration.z - ((acceleration.z * filteringFactor) + _highpass.z * (1.0 - filteringFactor));
+    _highpass.y = acceleration.y - ((acceleration.y * filteringFactor) + (_highpass.y * (1.0 - filteringFactor)));
+    _highpass.z = acceleration.z - ((acceleration.z * filteringFactor) + (_highpass.z * (1.0 - filteringFactor)));
     [self moveLabel:self.highpassFilterLabel x:_highpass.x y:_highpass.y];
 }
 
