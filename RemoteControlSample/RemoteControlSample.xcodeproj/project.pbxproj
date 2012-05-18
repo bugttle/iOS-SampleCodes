@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEBF4BA91562686E00BEA0E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF4BA81562686E00BEA0E7 /* UIKit.framework */; };
+		CEBF4BAB1562686E00BEA0E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF4BAA1562686E00BEA0E7 /* Foundation.framework */; };
+		CEBF4BAD1562686E00BEA0E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF4BAC1562686E00BEA0E7 /* CoreGraphics.framework */; };
+		CEBF4BB31562686E00BEA0E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBF4BB11562686E00BEA0E7 /* InfoPlist.strings */; };
+		CEBF4BB51562686E00BEA0E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF4BB41562686E00BEA0E7 /* main.m */; };
+		CEBF4BB91562686E00BEA0E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF4BB81562686E00BEA0E7 /* AppDelegate.m */; };
+		CEBF4BBC1562686E00BEA0E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF4BBB1562686E00BEA0E7 /* ViewController.m */; };
+		CEBF4BBF1562686F00BEA0E7 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBF4BBD1562686F00BEA0E7 /* ViewController_iPhone.xib */; };
+		CEBF4BC21562686F00BEA0E7 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBF4BC01562686F00BEA0E7 /* ViewController_iPad.xib */; };
+		CEBF4BD31562704300BEA0E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF4BD21562704300BEA0E7 /* AVFoundation.framework */; };
+		CEBF4BD715628E1300BEA0E7 /* se_maoudamashii_magical13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBF4BD615628E1200BEA0E7 /* se_maoudamashii_magical13.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEBF4BA41562686D00BEA0E7 /* RemoteControlSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControlSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBF4BA81562686E00BEA0E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEBF4BAA1562686E00BEA0E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEBF4BAC1562686E00BEA0E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEBF4BB01562686E00BEA0E7 /* RemoteControlSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemoteControlSample-Info.plist"; sourceTree = "<group>"; };
+		CEBF4BB21562686E00BEA0E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEBF4BB41562686E00BEA0E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEBF4BB61562686E00BEA0E7 /* RemoteControlSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteControlSample-Prefix.pch"; sourceTree = "<group>"; };
+		CEBF4BB71562686E00BEA0E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEBF4BB81562686E00BEA0E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEBF4BBA1562686E00BEA0E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEBF4BBB1562686E00BEA0E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEBF4BBE1562686F00BEA0E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CEBF4BC11562686F00BEA0E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CEBF4BD21562704300BEA0E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEBF4BD615628E1200BEA0E7 /* se_maoudamashii_magical13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_magical13.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEBF4BA11562686D00BEA0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBF4BD31562704300BEA0E7 /* AVFoundation.framework in Frameworks */,
+				CEBF4BA91562686E00BEA0E7 /* UIKit.framework in Frameworks */,
+				CEBF4BAB1562686E00BEA0E7 /* Foundation.framework in Frameworks */,
+				CEBF4BAD1562686E00BEA0E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEBF4B991562686B00BEA0E7 = {
+			isa = PBXGroup;
+			children = (
+				CEBF4BAE1562686E00BEA0E7 /* RemoteControlSample */,
+				CEBF4BA71562686D00BEA0E7 /* Frameworks */,
+				CEBF4BA51562686D00BEA0E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEBF4BA51562686D00BEA0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF4BA41562686D00BEA0E7 /* RemoteControlSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBF4BA71562686D00BEA0E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF4BD21562704300BEA0E7 /* AVFoundation.framework */,
+				CEBF4BA81562686E00BEA0E7 /* UIKit.framework */,
+				CEBF4BAA1562686E00BEA0E7 /* Foundation.framework */,
+				CEBF4BAC1562686E00BEA0E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEBF4BAE1562686E00BEA0E7 /* RemoteControlSample */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF4BB71562686E00BEA0E7 /* AppDelegate.h */,
+				CEBF4BB81562686E00BEA0E7 /* AppDelegate.m */,
+				CEBF4BBA1562686E00BEA0E7 /* ViewController.h */,
+				CEBF4BBB1562686E00BEA0E7 /* ViewController.m */,
+				CEBF4BBD1562686F00BEA0E7 /* ViewController_iPhone.xib */,
+				CEBF4BC01562686F00BEA0E7 /* ViewController_iPad.xib */,
+				CEBF4BD615628E1200BEA0E7 /* se_maoudamashii_magical13.mp3 */,
+				CEBF4BAF1562686E00BEA0E7 /* Supporting Files */,
+			);
+			path = RemoteControlSample;
+			sourceTree = "<group>";
+		};
+		CEBF4BAF1562686E00BEA0E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF4BB01562686E00BEA0E7 /* RemoteControlSample-Info.plist */,
+				CEBF4BB11562686E00BEA0E7 /* InfoPlist.strings */,
+				CEBF4BB41562686E00BEA0E7 /* main.m */,
+				CEBF4BB61562686E00BEA0E7 /* RemoteControlSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEBF4BA31562686D00BEA0E7 /* RemoteControlSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBF4BC51562686F00BEA0E7 /* Build configuration list for PBXNativeTarget "RemoteControlSample" */;
+			buildPhases = (
+				CEBF4BA01562686D00BEA0E7 /* Sources */,
+				CEBF4BA11562686D00BEA0E7 /* Frameworks */,
+				CEBF4BA21562686D00BEA0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteControlSample;
+			productName = RemoteControlSample;
+			productReference = CEBF4BA41562686D00BEA0E7 /* RemoteControlSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEBF4B9B1562686B00BEA0E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Individual;
+			};
+			buildConfigurationList = CEBF4B9E1562686B00BEA0E7 /* Build configuration list for PBXProject "RemoteControlSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEBF4B991562686B00BEA0E7;
+			productRefGroup = CEBF4BA51562686D00BEA0E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEBF4BA31562686D00BEA0E7 /* RemoteControlSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEBF4BA21562686D00BEA0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBF4BB31562686E00BEA0E7 /* InfoPlist.strings in Resources */,
+				CEBF4BBF1562686F00BEA0E7 /* ViewController_iPhone.xib in Resources */,
+				CEBF4BC21562686F00BEA0E7 /* ViewController_iPad.xib in Resources */,
+				CEBF4BD715628E1300BEA0E7 /* se_maoudamashii_magical13.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEBF4BA01562686D00BEA0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBF4BB51562686E00BEA0E7 /* main.m in Sources */,
+				CEBF4BB91562686E00BEA0E7 /* AppDelegate.m in Sources */,
+				CEBF4BBC1562686E00BEA0E7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEBF4BB11562686E00BEA0E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBF4BB21562686E00BEA0E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEBF4BBD1562686F00BEA0E7 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBF4BBE1562686F00BEA0E7 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CEBF4BC01562686F00BEA0E7 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBF4BC11562686F00BEA0E7 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEBF4BC31562686F00BEA0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEBF4BC41562686F00BEA0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEBF4BC61562686F00BEA0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemoteControlSample/RemoteControlSample-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "RemoteControlSample/RemoteControlSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEBF4BC71562686F00BEA0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemoteControlSample/RemoteControlSample-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "RemoteControlSample/RemoteControlSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEBF4B9E1562686B00BEA0E7 /* Build configuration list for PBXProject "RemoteControlSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBF4BC31562686F00BEA0E7 /* Debug */,
+				CEBF4BC41562686F00BEA0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBF4BC51562686F00BEA0E7 /* Build configuration list for PBXNativeTarget "RemoteControlSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBF4BC61562686F00BEA0E7 /* Debug */,
+				CEBF4BC71562686F00BEA0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEBF4B9B1562686B00BEA0E7 /* Project object */;
+}
