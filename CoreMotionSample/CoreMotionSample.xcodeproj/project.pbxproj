@@ -16,6 +16,7 @@
 		CEBFCA8E1563878A00A67BA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBFCA8D1563878A00A67BA5 /* ViewController.m */; };
 		CEBFCA911563878A00A67BA5 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBFCA8F1563878A00A67BA5 /* ViewController_iPhone.xib */; };
 		CEBFCA941563878A00A67BA5 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBFCA921563878A00A67BA5 /* ViewController_iPad.xib */; };
+		CEBFCA9C15638E5F00A67BA5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBFCA9A15638E1F00A67BA5 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		CEBFCA7A1563878A00A67BA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEBFCA7C1563878A00A67BA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEBFCA7E1563878A00A67BA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEBFCA821563878A00A67BA5 /* CoreMotionSample-Info.plist */ = {isa = PBXFileReference; path = "CoreMotionSample-Info.plist"; sourceTree = "<group>"; };
+		CEBFCA821563878A00A67BA5 /* CoreMotionSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreMotionSample-Info.plist"; sourceTree = "<group>"; };
 		CEBFCA841563878A00A67BA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEBFCA861563878A00A67BA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEBFCA881563878A00A67BA5 /* CoreMotionSample-Prefix.pch */ = {isa = PBXFileReference; path = "CoreMotionSample-Prefix.pch"; sourceTree = "<group>"; };
-		CEBFCA891563878A00A67BA5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEBFCA881563878A00A67BA5 /* CoreMotionSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreMotionSample-Prefix.pch"; sourceTree = "<group>"; };
+		CEBFCA891563878A00A67BA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEBFCA8A1563878A00A67BA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEBFCA8C1563878A00A67BA5 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		CEBFCA8C1563878A00A67BA5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CEBFCA8D1563878A00A67BA5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEBFCA901563878A00A67BA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		CEBFCA931563878A00A67BA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CEBFCA9A15638E1F00A67BA5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBFCA9C15638E5F00A67BA5 /* CoreMotion.framework in Frameworks */,
 				CEBFCA7B1563878A00A67BA5 /* UIKit.framework in Frameworks */,
 				CEBFCA7D1563878A00A67BA5 /* Foundation.framework in Frameworks */,
 				CEBFCA7F1563878A00A67BA5 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		CEBFCA791563878A00A67BA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEBFCA9A15638E1F00A67BA5 /* CoreMotion.framework */,
 				CEBFCA7A1563878A00A67BA5 /* UIKit.framework */,
 				CEBFCA7C1563878A00A67BA5 /* Foundation.framework */,
 				CEBFCA7E1563878A00A67BA5 /* CoreGraphics.framework */,
@@ -205,7 +209,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -216,11 +223,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -230,15 +238,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -251,7 +263,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreMotionSample/CoreMotionSample-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "CoreMotionSample/CoreMotionSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,7 +276,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreMotionSample/CoreMotionSample-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "CoreMotionSample/CoreMotionSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +303,7 @@
 				CEBFCA991563878A00A67BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
