@@ -59,10 +59,13 @@
     /* 各種センサーの利用開始(全てを動作させると非常に遅くなるので注意) */
     // CMAccelerometerDataの開始
     [self startCMAccelerometerData:frequency];
+    
     // CMGyroDataの開始
     [self startCMGyroData:frequency];
+    
     // CMMagnetometerDataの開始
     [self startCMMagnetometerData:frequency];
+    
     // CMDeviceMotionの開始
     [self startCMDeviceMotion:frequency];
 }
@@ -161,50 +164,65 @@
 
 - (void)startCMAccelerometerData:(int)frequency
 {
+    // 加速度センサーの有無を確認
     if (self.manager.accelerometerAvailable) {
-        self.manager.accelerometerUpdateInterval = 1 / frequency;
+        // 更新間隔の指定
+        self.manager.accelerometerUpdateInterval = 1 / frequency;  // 秒
+        // ハンドラ
         CMAccelerometerHandler handler = ^(CMAccelerometerData *data, NSError *error) {
             // double timestamp = data.timestamp;
             self.accelerometerDataXLabel.text = [NSString stringWithFormat:@"%lf", data.acceleration.x];
             self.accelerometerDataYLabel.text = [NSString stringWithFormat:@"%lf", data.acceleration.y];
             self.accelerometerDataZLabel.text = [NSString stringWithFormat:@"%lf", data.acceleration.z];
         };
+        // センサーの利用開始
         [self.manager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:handler];
     }
 }
 
 - (void)startCMGyroData:(int)frequency
 {
+    // ジャイロスコープの有無を確認
     if (self.manager.gyroAvailable) {
-        self.manager.gyroUpdateInterval = 1 / frequency;
+        // 更新間隔の指定
+        self.manager.gyroUpdateInterval = 1 / frequency;  // 秒
+        // ハンドラ
         CMGyroHandler handler = ^(CMGyroData *data, NSError *error) {
             // double timestamp = data.timestamp;
             self.gyroDataXLabel.text = [NSString stringWithFormat:@"%lf", data.rotationRate.x];
             self.gyroDataYLabel.text = [NSString stringWithFormat:@"%lf", data.rotationRate.y];
             self.gyroDataZLabel.text = [NSString stringWithFormat:@"%lf", data.rotationRate.z];
         };
+        // センサーの利用開始
         [self.manager startGyroUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:handler];
     }
 }
 
 - (void)startCMMagnetometerData:(int)frequency
 {
+    // 磁力計の有無を確認
     if (5.0 < _systemVersion && self.manager.magnetometerAvailable) {
-        self.manager.magnetometerUpdateInterval = 1 / frequency;
+        // 更新間隔の指定
+        self.manager.magnetometerUpdateInterval = 1 / frequency;  // 秒
+        // ハンドラ
         CMMagnetometerHandler handler = ^(CMMagnetometerData *data, NSError *error) {
             // double timestamp = data.timestamp;
             self.magnetometerDataXLabel.text = [NSString stringWithFormat:@"%lf", data.magneticField.x];
             self.magnetometerDataYLabel.text = [NSString stringWithFormat:@"%lf", data.magneticField.y];
             self.magnetometerDataZLabel.text = [NSString stringWithFormat:@"%lf", data.magneticField.z];
         };
+        // センサーの利用開始
         [self.manager startMagnetometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:handler];
     }
 }
 
 - (void)startCMDeviceMotion:(int)frequency
 {
-    if (self.manager.isDeviceMotionAvailable) {
-        self.manager.deviceMotionUpdateInterval = 1 / frequency;
+    // センサーの有無を確認
+    if (self.manager.deviceMotionAvailable) {
+        // 更新間隔の指定
+        self.manager.deviceMotionUpdateInterval = 1 / frequency;  // 秒
+        // ハンドラ
         CMDeviceMotionHandler handler = ^(CMDeviceMotion *motion, NSError *error) {
             //double timestamp = motion.timestamp;
             
