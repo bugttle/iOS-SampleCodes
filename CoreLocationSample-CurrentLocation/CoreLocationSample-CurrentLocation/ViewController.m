@@ -60,8 +60,6 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    
     _locationManager.delegate = nil;
     
     self.locationManager = nil;
@@ -81,6 +79,8 @@
     self.courseLabel = nil;
     self.workInBackgroundSwitch = nil;
     self.regionMoniteringSwitch = nil;
+    
+    [super viewDidUnload];
 }
 
 - (void)dealloc
