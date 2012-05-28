@@ -1,0 +1,4 @@
+MKReverseGeocoderを利用したジオコーディングの出力にはGoogleマップを利用しなければならないため、最低限必要なだけのMapKitを利用しています。
+
+なお、CLGeocoderを利用した正・逆のジオコーディングは、以下のURLでサンプルを公開しています。
+https://github.com/uqtimes/iOS-SampleCodes/tree/master/CoreLocationSample-Geocoding
