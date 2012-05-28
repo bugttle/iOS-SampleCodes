@@ -16,9 +16,11 @@
 		CE4AA8431571CE690083848A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4AA8421571CE690083848A /* ViewController.m */; };
 		CE4AA8461571CE690083848A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4AA8441571CE690083848A /* ViewController_iPhone.xib */; };
 		CE4AA8491571CE690083848A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4AA8471571CE690083848A /* ViewController_iPad.xib */; };
+		CEDABEDD1571E2D800A62E43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDABEDC1571E2D800A62E43 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE46E804157366000027AFE2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		CE4AA82B1571CE690083848A /* CoreLocationSample-Geocoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreLocationSample-Geocoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AA82F1571CE690083848A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE4AA8311571CE690083848A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,6 +35,7 @@
 		CE4AA8421571CE690083848A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE4AA8451571CE690083848A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		CE4AA8481571CE690083848A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CEDABEDC1571E2D800A62E43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDABEDD1571E2D800A62E43 /* CoreLocation.framework in Frameworks */,
 				CE4AA8301571CE690083848A /* UIKit.framework in Frameworks */,
 				CE4AA8321571CE690083848A /* Foundation.framework in Frameworks */,
 				CE4AA8341571CE690083848A /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +56,7 @@
 		CE4AA8201571CE680083848A = {
 			isa = PBXGroup;
 			children = (
+				CE46E804157366000027AFE2 /* README.md */,
 				CE4AA8351571CE690083848A /* CoreLocationSample-Geocoding */,
 				CE4AA82E1571CE690083848A /* Frameworks */,
 				CE4AA82C1571CE690083848A /* Products */,
@@ -69,6 +74,7 @@
 		CE4AA82E1571CE690083848A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEDABEDC1571E2D800A62E43 /* CoreLocation.framework */,
 				CE4AA82F1571CE690083848A /* UIKit.framework */,
 				CE4AA8311571CE690083848A /* Foundation.framework */,
 				CE4AA8331571CE690083848A /* CoreGraphics.framework */,
@@ -220,7 +226,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -238,7 +244,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,6 +293,7 @@
 				CE4AA84E1571CE690083848A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

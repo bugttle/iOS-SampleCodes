@@ -1,0 +1,5 @@
+CLGeocoderを利用したジオコーディングのため、iOS 5.0以降でのみ動作します。
+MKReverseGeocoderを利用したジオコーディングの出力にはGoogleマップを利用しなければならないため、
+以下のURLでサンプルを公開しています。
+
+https://github.com/uqtimes/iOS-SampleCodes/CoreLocationSample-MKReverseGeocoder
