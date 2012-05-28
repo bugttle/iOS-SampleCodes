@@ -53,7 +53,8 @@
     [super viewDidUnload];
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
     [_geocoder release];
     [_addressesArray release];
     
@@ -122,7 +123,7 @@
 }
 
 - (IBAction)convertCoordinate:(id)sender {
-    // 緯度が正しいかをチェック
+    // 緯度・経度が正しいかをチェック
     if (![self coordinateIsValid]) {
         return;  // エラーがあれば変換しない
     }
@@ -177,7 +178,7 @@
 }
 
 /* 入力されている値が、正しい緯度・経度であるかを判定
- * CLLocationCoordinate2DIsValid だと、緯度か経度のどちらが誤っているか検知できない
+ * CLLocationCoordinate2DIsValid だと、緯度か経度のどちらが誤っているかを検知できない
  */
 - (BOOL)coordinateIsValid
 {
@@ -263,7 +264,7 @@
         case kCLErrorGeocodeCanceled:
             return @"Canceled";
         default:
-            return [error description];
+            return [error localizedDescription];
     }
 }
 
