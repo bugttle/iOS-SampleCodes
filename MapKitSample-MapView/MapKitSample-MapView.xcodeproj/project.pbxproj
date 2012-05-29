@@ -16,6 +16,8 @@
 		CE46E8A015745BC00027AFE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46E89F15745BC00027AFE2 /* ViewController.m */; };
 		CE46E8A315745BC00027AFE2 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46E8A115745BC00027AFE2 /* ViewController_iPhone.xib */; };
 		CE46E8A615745BC00027AFE2 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46E8A415745BC00027AFE2 /* ViewController_iPad.xib */; };
+		CE46E8AD15745C050027AFE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46E8AC15745C050027AFE2 /* MapKit.framework */; };
+		CE46E8B3157469E40027AFE2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46E8B2157469E40027AFE2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		CE46E89F15745BC00027AFE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE46E8A215745BC00027AFE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		CE46E8A515745BC00027AFE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CE46E8AC15745C050027AFE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE46E8B2157469E40027AFE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE46E8B3157469E40027AFE2 /* CoreLocation.framework in Frameworks */,
+				CE46E8AD15745C050027AFE2 /* MapKit.framework in Frameworks */,
 				CE46E88D15745BC00027AFE2 /* UIKit.framework in Frameworks */,
 				CE46E88F15745BC00027AFE2 /* Foundation.framework in Frameworks */,
 				CE46E89115745BC00027AFE2 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +75,8 @@
 		CE46E88B15745BC00027AFE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE46E8AC15745C050027AFE2 /* MapKit.framework */,
+				CE46E8B2157469E40027AFE2 /* CoreLocation.framework */,
 				CE46E88C15745BC00027AFE2 /* UIKit.framework */,
 				CE46E88E15745BC00027AFE2 /* Foundation.framework */,
 				CE46E89015745BC00027AFE2 /* CoreGraphics.framework */,
@@ -220,7 +228,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -238,7 +246,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
