@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF6934315777E0500CC85CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF6934215777E0500CC85CC /* UIKit.framework */; };
+		CEF6934515777E0500CC85CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF6934415777E0500CC85CC /* Foundation.framework */; };
+		CEF6934715777E0500CC85CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF6934615777E0500CC85CC /* CoreGraphics.framework */; };
+		CEF6934D15777E0500CC85CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF6934B15777E0500CC85CC /* InfoPlist.strings */; };
+		CEF6934F15777E0500CC85CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF6934E15777E0500CC85CC /* main.m */; };
+		CEF6935315777E0500CC85CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF6935215777E0500CC85CC /* AppDelegate.m */; };
+		CEF6935615777E0500CC85CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF6935515777E0500CC85CC /* ViewController.m */; };
+		CEF6935915777E0500CC85CC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF6935715777E0500CC85CC /* ViewController_iPhone.xib */; };
+		CEF6935C15777E0500CC85CC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF6935A15777E0500CC85CC /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEF6933E15777E0500CC85CC /* MultitouchTrackingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultitouchTrackingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF6934215777E0500CC85CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF6934415777E0500CC85CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF6934615777E0500CC85CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF6934A15777E0500CC85CC /* MultitouchTrackingSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultitouchTrackingSample-Info.plist"; sourceTree = "<group>"; };
+		CEF6934C15777E0500CC85CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF6934E15777E0500CC85CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF6935015777E0500CC85CC /* MultitouchTrackingSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultitouchTrackingSample-Prefix.pch"; sourceTree = "<group>"; };
+		CEF6935115777E0500CC85CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF6935215777E0500CC85CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF6935415777E0500CC85CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEF6935515777E0500CC85CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEF6935815777E0500CC85CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CEF6935B15777E0500CC85CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF6933B15777E0500CC85CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF6934315777E0500CC85CC /* UIKit.framework in Frameworks */,
+				CEF6934515777E0500CC85CC /* Foundation.framework in Frameworks */,
+				CEF6934715777E0500CC85CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF6933315777E0300CC85CC = {
+			isa = PBXGroup;
+			children = (
+				CEF6934815777E0500CC85CC /* MultitouchTrackingSample */,
+				CEF6934115777E0500CC85CC /* Frameworks */,
+				CEF6933F15777E0500CC85CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF6933F15777E0500CC85CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6933E15777E0500CC85CC /* MultitouchTrackingSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF6934115777E0500CC85CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6934215777E0500CC85CC /* UIKit.framework */,
+				CEF6934415777E0500CC85CC /* Foundation.framework */,
+				CEF6934615777E0500CC85CC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF6934815777E0500CC85CC /* MultitouchTrackingSample */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6935115777E0500CC85CC /* AppDelegate.h */,
+				CEF6935215777E0500CC85CC /* AppDelegate.m */,
+				CEF6935415777E0500CC85CC /* ViewController.h */,
+				CEF6935515777E0500CC85CC /* ViewController.m */,
+				CEF6935715777E0500CC85CC /* ViewController_iPhone.xib */,
+				CEF6935A15777E0500CC85CC /* ViewController_iPad.xib */,
+				CEF6934915777E0500CC85CC /* Supporting Files */,
+			);
+			path = MultitouchTrackingSample;
+			sourceTree = "<group>";
+		};
+		CEF6934915777E0500CC85CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6934A15777E0500CC85CC /* MultitouchTrackingSample-Info.plist */,
+				CEF6934B15777E0500CC85CC /* InfoPlist.strings */,
+				CEF6934E15777E0500CC85CC /* main.m */,
+				CEF6935015777E0500CC85CC /* MultitouchTrackingSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF6933D15777E0500CC85CC /* MultitouchTrackingSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF6935F15777E0500CC85CC /* Build configuration list for PBXNativeTarget "MultitouchTrackingSample" */;
+			buildPhases = (
+				CEF6933A15777E0500CC85CC /* Sources */,
+				CEF6933B15777E0500CC85CC /* Frameworks */,
+				CEF6933C15777E0500CC85CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultitouchTrackingSample;
+			productName = MultitouchTrackingSample;
+			productReference = CEF6933E15777E0500CC85CC /* MultitouchTrackingSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF6933515777E0300CC85CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Individual;
+			};
+			buildConfigurationList = CEF6933815777E0300CC85CC /* Build configuration list for PBXProject "MultitouchTrackingSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEF6933315777E0300CC85CC;
+			productRefGroup = CEF6933F15777E0500CC85CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF6933D15777E0500CC85CC /* MultitouchTrackingSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF6933C15777E0500CC85CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF6934D15777E0500CC85CC /* InfoPlist.strings in Resources */,
+				CEF6935915777E0500CC85CC /* ViewController_iPhone.xib in Resources */,
+				CEF6935C15777E0500CC85CC /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF6933A15777E0500CC85CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF6934F15777E0500CC85CC /* main.m in Sources */,
+				CEF6935315777E0500CC85CC /* AppDelegate.m in Sources */,
+				CEF6935615777E0500CC85CC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF6934B15777E0500CC85CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF6934C15777E0500CC85CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEF6935715777E0500CC85CC /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF6935815777E0500CC85CC /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CEF6935A15777E0500CC85CC /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF6935B15777E0500CC85CC /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF6935D15777E0500CC85CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF6935E15777E0500CC85CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF6936015777E0500CC85CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultitouchTrackingSample/MultitouchTrackingSample-Prefix.pch";
+				INFOPLIST_FILE = "MultitouchTrackingSample/MultitouchTrackingSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF6936115777E0500CC85CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultitouchTrackingSample/MultitouchTrackingSample-Prefix.pch";
+				INFOPLIST_FILE = "MultitouchTrackingSample/MultitouchTrackingSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF6933815777E0300CC85CC /* Build configuration list for PBXProject "MultitouchTrackingSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF6935D15777E0500CC85CC /* Debug */,
+				CEF6935E15777E0500CC85CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF6935F15777E0500CC85CC /* Build configuration list for PBXNativeTarget "MultitouchTrackingSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF6936015777E0500CC85CC /* Debug */,
+				CEF6936115777E0500CC85CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF6933515777E0300CC85CC /* Project object */;
+}

@@ -9,6 +9,21 @@
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
 
+@interface MyAnnotation : NSObject <MKAnnotation>
+@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
+@end
+
+@implementation MyAnnotation
+
+-(id)initWithCoordinate:(CLLocationCoordinate2D)co
+{
+    _coordinate = co;
+    return self;
+}
+
+@end
+
 @interface ViewController ()
 {
     int _lastSliderValue;
@@ -144,6 +159,11 @@
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(35.658608, 139.745396);
     MKCoordinateRegion coordRegion = MKCoordinateRegionMakeWithDistance(coord, 500, 500);
     [_mapView setRegion:coordRegion animated:YES];
+    
+    MyAnnotation *annotation = [[[MyAnnotation alloc] init] autorelease];
+    annotation.coordinate = coord;
+    annotation.title = @"東京タワー！";
+    [_mapView addAnnotation:annotation];
 }
 
 /* ユーザトラッキング＋ヘディングアップをするかどうか */
@@ -190,6 +210,15 @@
 - (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView
 {
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    
+//    MKOverlayView *olView = [[mapView overlays] lastObject];
+//    MKMapRect mapRect = [olView mapRectForRect:[UIScreen mainScreen].bounds];
+//    NSSet *annotations = [mapView annotationsInMapRect:mapRect];
+    
+    MKMapRect mapRect = mapView.visibleMapRect;
+    NSSet *annotations = [self.mapView annotationsInMapRect:mapRect];
+    MyAnnotation *anotation = [annotations anyObject];
+    [mapView selectAnnotation:[mapView.annotations lastObject] animated:YES];
 }
 
 /* 地図の読み込みに失敗した場合 */
@@ -231,6 +260,23 @@
     if (_mapView.userTrackingMode == MKUserTrackingModeNone) {
         _headingSwitch.on = NO;
     }
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views
+{
+//    [mapView selectAnnotation:[[mapView annotations] lastObject] animated:YES];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *av = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"Pin"];
+    if (!av) {
+        av = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Pin"];
+        av.animatesDrop = YES;
+//        av.pinColor = MKPinAnnotationColorPurple;
+        av.canShowCallout = YES;
+    }
+    return av;
 }
 
 @end
